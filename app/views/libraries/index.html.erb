@@ -9,6 +9,8 @@
 
 <% @libraries.each do |library| %>
   <tr>
+    <td><%= library.name %></td>
+    <td><%= library.book_id %></td>
     <td><%= link_to 'Show', library %></td>
     <td><%= link_to 'Edit', edit_library_path(library) %></td>
     <td><%= link_to 'Destroy', library, confirm: 'Are you sure?', method: :delete %></td>
